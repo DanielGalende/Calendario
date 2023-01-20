@@ -23,9 +23,9 @@ public class Calendario
     }
     
     public String obtenerFecha(){
-        String otroDia = "";
-        String otroMes = "";
-        String otroAno = "";
+        String otroDia = dia + "";
+        String otroMes = mes + "";
+        String otroAno = ano + "";
         String fecha ="";
         if (dia < 10){
             otroDia = "0" + dia;
