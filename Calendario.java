@@ -23,8 +23,22 @@ public class Calendario
     }
     
     public String obtenerFecha(){
+        String otroDia = "";
+        String otroMes = "";
+        String otroAno = "";
         String fecha ="";
-        fecha = ano + "-" + mes + "-" + dia;
+        if (dia < 10){
+            otroDia = "0" + dia;
+        }
+        
+        if (mes < 10){
+            otroMes = "0" + mes;
+        }
+        
+        if (ano < 10){
+            otroAno = "0" + ano;
+        }
+        fecha = otroAno + "-" + otroMes + "-" + otroDia;
         return fecha;
     }
     
