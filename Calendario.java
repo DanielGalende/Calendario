@@ -42,6 +42,23 @@ public class Calendario
         return fecha;
     }
     
+    public void avanzarFecha(){
+        dia = dia + 1;
+        if (dia > 30){
+            dia = 1;
+            mes =  1 + mes;
+        }
+        
+        if(mes > 12){
+            mes = 1;
+            ano = 1 + ano;
+        }
+        
+        if (ano > 99){
+            ano = 1;
+        }
+    }
+    
     public void fijarFecha(int nuevoDia, int nuevoMes, int nuevoAno){
         dia = nuevoDia;
         mes = nuevoMes;
